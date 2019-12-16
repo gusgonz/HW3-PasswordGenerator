@@ -29,6 +29,14 @@ function validateUserChoices(inputArray) {
         return false;
     }
 
+    // Validates that input is between 8 and 128 characters
+    var lengthNum = parseInt(inputArray[0]);
+    if (lengthNum === NaN) {
+        return false;
+    } else if ((lengthNum > 128) || (lengthNum < 8)) {
+        return false;
+    }
+    
     // Making sure at least one character type exists. false if not
     atLeastOne = inputArray[1] || inputArray[2] || inputArray[3] || inputArray[4];
 
