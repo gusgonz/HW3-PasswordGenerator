@@ -113,21 +113,21 @@ function generate(length, specialCharLogicArray) {
     for (var i = 0; i < (length - choices.length); i++) {
         // Picks random string of character types from choices array
         var randIndex = Math.floor(Math.random() * (choices.length));
-        console.log(randIndex);
+        // console.log(randIndex);
         // Chooses random index from 0 - length of the string of chosen character type - 1
         // Decides index of next character within the type
         var nextCharacterIndex = Math.floor(Math.random() * (choices[randIndex].length - 1));
-        console.log(nextCharacterIndex);
+        // console.log(nextCharacterIndex);
         password = password + choices[randIndex][nextCharacterIndex];
-        console.log(password);
+        // console.log(password);
         
     }
     // 2nd loop to guarantee at least one of each user type is included in the password
     for (var x = 0; x < choices.length; x++) {
         var nextCharacterIndex = Math.floor(Math.random() * (choices[x].length - 1));
         password = password + choices[x][nextCharacterIndex];
-        console.log(password);
-        console.log(password.length);
+        // console.log(password);
+        // console.log(password.length);
     }
 
     return password;
@@ -163,12 +163,7 @@ function generatePassword() {
     var password = generate((userInputArray[0]),([userInputArray[1], userInputArray[2], userInputArray[3], userInputArray[4]]));
 
     console.log(password);
-
-    return 
-
-
-
-
+    console.log(password.length);
 
 
 
