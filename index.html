@@ -19,18 +19,18 @@
       </div>
       <div class="row">
         <textarea
-        class="col"
+        class="col form-control"
         readonly
         id="password"
         placeholder="Your Secure Password"
         aria-label="Generated Password"
       ></textarea>
       </div>
-      <div class="row">
+      <div class="row buttons">
 
          <!-- Linking button to generatePassword function -->
-        <button class="col" onclick = "generatePassword()" id="generate">Generate Password</button>
-        <button class = "col" id="copy">
+        <button class="col btn-lg btn-outline-success" onclick = "generatePassword()" id="generate">Generate Password</button>
+        <button class = "col btn-lg btn-outline-primary" id="copy">
         Copy to Clipboard
         </button>
       </div>
