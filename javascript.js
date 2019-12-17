@@ -4,9 +4,13 @@ function userInput() {
 
     // Initial Prompt
     var userLength = prompt("Please enter a length between 8-128 characters for your randomly generated password.");
+    var number = parseInt(userLength);
 
-    // If they press cancel, return null
-    if (userLength === null) {
+    // If they press cancel or don't enter a number, return null to show length error
+    // Or if the length is not in the range, return null to show length error
+    if (userLength === null || Number.isNaN(number)) {
+        return null;
+    } else if ((number > 128) || (number < 8)) {
         return null;
     }
 
@@ -28,20 +32,21 @@ function validateUserChoices(inputArray) {
     if (inputArray === null) {
         return false;
     }
+   
 
     // Validates that input is between 8 and 128 characters
-    var lengthNum = parseInt(inputArray[0]);
+    // var lengthNum = parseInt(inputArray[0]);
     // console.log(lengthNum);
-    if (Number.isNaN(lengthNum)) {
-        return false;
-    } else if ((lengthNum > 128) || (lengthNum < 8)) {
-        return false;
-    }
+    // if (Number.isNaN(lengthNum)) {
+    //     return false;
+    // } else if ((lengthNum > 128) || (lengthNum < 8)) {
+    //     return false;
+    // }
     
     // Making sure at least one character type exists. false if not
     atLeastOne = inputArray[1] || inputArray[2] || inputArray[3] || inputArray[4];
 
-    // If at least one is false, return null to end generate password function
+    // If all are false, return null to end generate password function
     if (!atLeastOne) {
         return null;
     }
@@ -158,6 +163,8 @@ function generatePassword() {
     var password = generate((userInputArray[0]),([userInputArray[1], userInputArray[2], userInputArray[3], userInputArray[4]]));
 
     console.log(password);
+
+    return 
 
 
 
