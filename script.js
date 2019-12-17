@@ -1,4 +1,4 @@
-
+var passwordTextarea = document.getElementById("password")
 // Creating funtion to get user input for their password
 function userInput() {
 
@@ -165,6 +165,9 @@ function generatePassword() {
     console.log(password);
     console.log(password.length);
 
+    passwordTextarea.textContent = password;
+
+    return
 
 
 
