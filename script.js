@@ -168,11 +168,12 @@ function generatePassword() {
     passwordTextarea.textContent = password;
 
     return
-
-
-
-
 }
+
+function copyToClipboard(){
+    passwordTextarea.select();
+    document.execCommand('copy');
+  };
 
 
 
