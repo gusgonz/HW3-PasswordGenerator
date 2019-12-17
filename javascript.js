@@ -125,12 +125,8 @@ function generate(length, specialCharLogicArray) {
         console.log(password.length);
     }
 
+    return password;
     
-    
-
-
-
-
 
 
 }
@@ -159,7 +155,9 @@ function generatePassword() {
 
     // Now that I know I have a valid length and at least one special character, I can call my generate function, which takes in the input array and returns the password 
 
-    password = generate((userInputArray[0]),([userInputArray[1], userInputArray[2], userInputArray[3], userInputArray[4]]));
+    var password = generate((userInputArray[0]),([userInputArray[1], userInputArray[2], userInputArray[3], userInputArray[4]]));
+
+    console.log(password);
 
 
 
