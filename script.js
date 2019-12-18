@@ -175,6 +175,9 @@ function copyToClipboard(){
     document.execCommand('copy');
   };
 
+function clearTextarea(){
+    passwordTextarea.textContent = "";
 
+}
 
 
