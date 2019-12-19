@@ -16,7 +16,7 @@
     </header>
 
 
-    <div class="container-sm">
+    <div class="container-sm password-area">
 
       <div class="row">
         <h2 class="col">Generate a Password</h2>
@@ -26,26 +26,26 @@
         <textarea class="col form-control" readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
       </div>
 
+    </div>
+
+    <div class="container-sm buttons">
       <div class="row buttons">
 
-         <!-- Linking button to generatePassword function -->
-        <button class="col-sm btn-lg btn-outline-success" onclick = "generatePassword()" id="generate">Generate Password</button>
 
-        <button class = "col-sm btn-lg btn-outline-primary" id="copy" onclick="copyToClipboard()">
+         <button class = "col-sm btn-lg btn-outline-danger" id="clear" onclick="clearTextarea()">
+        Clear Results
+        </button>
+ 
+
+        <button class = "col-sm btn-lg btn-outline-success" id="copy" onclick="copyToClipboard()">
         Copy to Clipboard
         </button>
 
-        <button class = "col-sm btn-lg btn-outline-danger" id="copy" onclick="clearTextarea()">
-        Clear Results
-        </button>
+        <!-- Linking button to generatePassword function -->
+        <button class="col-sm btn-lg btn-outline-success" onclick = "generatePassword()" id="generate">Generate Password</button>
 
+       
       </div>
-      
-      
-     
-
-
-
     </div>
     
 

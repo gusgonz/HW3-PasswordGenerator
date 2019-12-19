@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(199, 210, 221, .5);
+    min-width: 400px;
+}
+
+/* gonna have to media query this */
+/* .container-sm {
+    max-width: 720px;
+} */
+
+.password-area {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(43, 40, 185, .8);
+
+}
+
+h1 {
+    color:whitesmoke;
+    padding: 15px;
+}
+
+#clear, #copy {
+    display: none;
+}

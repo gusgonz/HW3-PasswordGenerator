@@ -165,6 +165,17 @@ function generatePassword() {
     console.log(password);
     console.log(password.length);
 
+    var clearBtnEl = document.querySelector("#clear");
+    clearBtnEl.setAttribute("style", "display: initial;")
+
+    var copyBtnEl = document.querySelector("#copy");
+    copyBtnEl.setAttribute("style", "display: initial;")
+
+    var generateBtnEl = document.querySelector("#generate");
+    generateBtnEl.setAttribute("style", "display: none;")
+
+
+
     passwordTextarea.textContent = password;
 
     return
@@ -177,6 +188,15 @@ function copyToClipboard(){
 
 function clearTextarea(){
     passwordTextarea.textContent = "";
+
+    var clearBtnEl = document.querySelector("#clear");
+    clearBtnEl.setAttribute("style", "display: none;")
+
+    var copyBtnEl = document.querySelector("#copy");
+    copyBtnEl.setAttribute("style", "display: none;")
+
+    var generateBtnEl = document.querySelector("#generate");
+    generateBtnEl.setAttribute("style", "display: intial;")
 
 }
 
