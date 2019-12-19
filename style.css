@@ -61,3 +61,10 @@ h1 {
 #clear, #copy {
     display: none;
 }
+
+@media only screen and (min-width: 991px) {
+    .password-area {
+      max-width: 720px;
+    }
+
+}
