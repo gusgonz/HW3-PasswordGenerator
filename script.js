@@ -166,13 +166,13 @@ function generatePassword() {
     console.log(password.length);
 
     var clearBtnEl = document.querySelector("#clear");
-    clearBtnEl.setAttribute("style", "display: initial;")
+    clearBtnEl.setAttribute("style", "display: initial;");
 
     var copyBtnEl = document.querySelector("#copy");
-    copyBtnEl.setAttribute("style", "display: initial;")
+    copyBtnEl.setAttribute("style", "display: initial;");
 
     var generateBtnEl = document.querySelector("#generate");
-    generateBtnEl.setAttribute("style", "display: none;")
+    generateBtnEl.setAttribute("style", "display: none;");
 
 
 
@@ -196,7 +196,7 @@ function clearTextarea(){
     copyBtnEl.setAttribute("style", "display: none;")
 
     var generateBtnEl = document.querySelector("#generate");
-    generateBtnEl.setAttribute("style", "display: intial;")
+    generateBtnEl.setAttribute("style", "display: initial;")
 
 }
 
