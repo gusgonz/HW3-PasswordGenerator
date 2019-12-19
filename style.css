@@ -1,6 +1,7 @@
 body {
     background-color: rgb(199, 210, 221, .5);
     min-width: 400px;
+    font-family: 'Kanit', sans-serif;
 }
 
 /* gonna have to media query this */
@@ -48,6 +49,13 @@ header {
 h1 {
     color:whitesmoke;
     padding: 15px;
+}
+
+#password {
+    height: 175px;
+    font-size: 20px;
+    line-height: 1.5;
+    word-break: break-all;
 }
 
 #clear, #copy {
