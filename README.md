@@ -3,7 +3,7 @@ A web application that generates a random password based on user inputed criteri
 
 ## Installation
 
-Just download and run.
+Just download and run locally in browser.
 
 OR
 
@@ -21,12 +21,9 @@ To generate random password:
 6. Enjoy!
 
 
-
 ## Credits
 
 Me
-
-
 
 
 ## License
