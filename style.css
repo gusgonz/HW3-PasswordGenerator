@@ -1,7 +1,6 @@
 body {
     background-color: rgb(199, 210, 221, .5);
     min-width: 400px;
-    font-family: 'Kanit', sans-serif;
 }
 
 /* gonna have to media query this */
