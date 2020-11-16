@@ -5,6 +5,10 @@ A web application that generates a random password based on user inputed criteri
 
 Just download and run.
 
+OR
+
+Use this link to open in browswer: https://gusgonz.github.io/HW3-PasswordGenerator/
+
 ## Usage 
 
 To generate random password:
