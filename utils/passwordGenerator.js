@@ -1,4 +1,4 @@
-// Generates random password using user input array of criteria
+// Generates random password using user input object of password preferences
 
 function passwordGenerator(passwordObj) {
     // 26 special characters as string
