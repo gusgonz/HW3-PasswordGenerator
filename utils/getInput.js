@@ -4,10 +4,11 @@ function getInput() {
 
     // Initial Prompt
     var passwordLengthInput = prompt("Please enter a length between 8-128 characters for your randomly generated password.");
+    password.userHitCancel = passwordLengthInput === null;
+
     password.length = parseInt(passwordLengthInput);
 
-    password.userHitCancel = password.length === null;
-    password.hasValidLength = (password.length > 128) || (password.length < 8);
+    password.hasValidLength = (password.length <= 128) && (password.length >= 8);
 
     if (!password.userHitCancel && password.hasValidLength) {
 
@@ -18,8 +19,8 @@ function getInput() {
         var useUpper = confirm("Do you want your password to contain uppercase letters?");
 
         // Store the user inputted length and character types in array
+        password.hasAtLeastOne = useSpclChars || useNums || useLower || useUpper;
         password.passwordPrefs = [useSpclChars, useNums, useLower, useUpper];
-        password.hasAtLeastOne = passwordPrefs[0] || passwordPrefs[1] || passwordPrefs[2] || passwordPrefs[3];
     }
 
     // Return user choices array
